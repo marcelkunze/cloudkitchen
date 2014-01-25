@@ -1,0 +1,17 @@
+Listed here are the sources for the open source modifications we did in this package.
+
+Gemini Web:
+-org.eclipse.gemini.web.core
+-org.eclipse.gemini.web.tomcat
+All the changes in these bundles are either contributed or downported from the project's source repository - git://git.eclipse.org/gitroot/gemini.web/org.eclipse.gemini.web.gemini-web-container.git
+
+Equinox:
+-org.eclipse.osgi
+All the changes in this bundle are either contributed or downported from the project's source repository - git://git.eclipse.org/gitroot/equinox/rt.equinox.framework.git
+
+p2 SimpleConfigurator:
+-org.eclipse.equinox.simpleconfigurator
+All the changes in this bundle are either contributed or downported from the project's source repository - git://git.eclipse.org/gitroot/equinox/rt.equinox.p2.git
+
+Equinox p2:
+Attached in the distribution is a src.zip file that contains the modified source of the org.eclipse.equinox.p2 bundles.

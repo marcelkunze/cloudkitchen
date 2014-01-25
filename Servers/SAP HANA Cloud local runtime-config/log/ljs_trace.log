@@ -1,0 +1,194 @@
+FILE_TYPE:DAAA96DE-B0FB-4c6e-AF7B-A445F5BF9BE2
+FILE_ID:1373926010144
+ENCODING:[UTF8|NWCJS:ASCII]
+RECORD_SEPARATOR:124
+COLUMN_SEPARATOR:35
+ESC_CHARACTER:92
+COLUMNS:Time|TZone|Severity|Logger|ACH|User|Thread|Bundle name|JPSpace|JPAppliance|JPComponent|Text|
+SEVERITY_MAP:FINEST|Information|FINER|Information|FINE|Information|CONFIG|Information|DEBUG|Information|PATH|Information|INFO|Information|WARNING|Warning|ERROR|Error|SEVERE|Error|FATAL|Error
+HEADER_END
+
+2013 07 16 00:07:03#+0200#INFO#System.out##anonymous#Thread-8###Deploying file with path [C:\Users\Marcel\workspace\Servers\SAP HANA Cloud local runtime-config\.\pickup\KlimaSAP.war]|
+2013 07 16 00:07:04#+0200#INFO#System.out##anonymous#Thread-8###Deployment of file with path [C:\Users\Marcel\workspace\Servers\SAP HANA Cloud local runtime-config\.\pickup\KlimaSAP.war] is successful.|
+2013 07 16 00:37:28#+0200#INFO#System.out##anonymous#Thread-7###Updating file with path [C:\Users\Marcel\workspace\Servers\SAP HANA Cloud local runtime-config\.\pickup\KlimaSAP.war]|
+2013 07 16 00:37:30#+0200#INFO#System.out##anonymous#Thread-7###Update of file with path [C:\Users\Marcel\workspace\Servers\SAP HANA Cloud local runtime-config\.\pickup\KlimaSAP.war] is successful.|
+2013 07 23 22:59:46#+0200#INFO#System.out##anonymous#Thread-7###Updating file with path [C:\Users\Marcel\workspace\Servers\SAP HANA Cloud local runtime-config\.\pickup\KlimaSAP.war]|
+2013 07 23 22:59:49#+0200#INFO#System.out##anonymous#Thread-7###Update of file with path [C:\Users\Marcel\workspace\Servers\SAP HANA Cloud local runtime-config\.\pickup\KlimaSAP.war] is successful.|
+2014 01 25 19:32:46#+0100#INFO#System.out##anonymous#Thread-7###Updating file with path [C:\Users\Marcel\workspace\Servers\SAP HANA Cloud local runtime-config\.\pickup\KlimaSAP.war]|
+2014 01 25 19:32:48#+0100#ERROR#org.apache.catalina.core.ContainerBase##anonymous#Thread-7###ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/KlimaSAP]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.startWebApplication(TomcatServletContainer.java:125)
+	at org.eclipse.gemini.web.internal.StandardWebApplication.start(StandardWebApplication.java:109)
+	at org.eclipse.gemini.web.extender.WebContainerBundleCustomizer.addingBundle(WebContainerBundleCustomizer.java:49)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:482)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:262)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:234)
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:457)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:847)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEventPrivileged(Framework.java:1523)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEvent(Framework.java:1459)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEvent(Framework.java:1454)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:391)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.updateWorker(AbstractBundle.java:644)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.update(AbstractBundle.java:591)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.update(AbstractBundle.java:574)
+	at com.sap.core.js.deployer.watchservice.WARDeployer.update(WARDeployer.java:297)
+	at com.sap.core.js.deployer.watchservice.FileSystemEventsListener.onChange(FileSystemEventsListener.java:68)
+	at org.eclipse.virgo.util.io.FileSystemChecker.notifyListeners(FileSystemChecker.java:245)
+	at org.eclipse.virgo.util.io.FileSystemChecker.check(FileSystemChecker.java:166)
+	at com.sap.core.js.deployer.watchservice.WatchTask.run(WatchTask.java:29)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: IOException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredMethods(Introspection.java:127)
+	at org.apache.catalina.startup.WebAnnotationSet.loadMethodsAnnotation(WebAnnotationSet.java:279)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:141)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:67)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:405)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:881)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:369)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5269)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 27 more
+Caused by: java.lang.ClassNotFoundException: IOException
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:513)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 41 more|
+2014 01 25 19:32:48#+0100#ERROR#org.eclipse.gemini.web.internal.StandardWebApplication##anonymous#Thread-7###Failed to start web application at context path '/KlimaSAP'
+org.eclipse.gemini.web.core.spi.ServletContainerException: Web application at '/KlimaSAP' cannot be added to the host.
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.startWebApplication(TomcatServletContainer.java:128)
+	at org.eclipse.gemini.web.internal.StandardWebApplication.start(StandardWebApplication.java:109)
+	at org.eclipse.gemini.web.extender.WebContainerBundleCustomizer.addingBundle(WebContainerBundleCustomizer.java:49)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:482)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:262)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:234)
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:457)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:847)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEventPrivileged(Framework.java:1523)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEvent(Framework.java:1459)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEvent(Framework.java:1454)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:391)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.updateWorker(AbstractBundle.java:644)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.update(AbstractBundle.java:591)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.update(AbstractBundle.java:574)
+	at com.sap.core.js.deployer.watchservice.WARDeployer.update(WARDeployer.java:297)
+	at com.sap.core.js.deployer.watchservice.FileSystemEventsListener.onChange(FileSystemEventsListener.java:68)
+	at org.eclipse.virgo.util.io.FileSystemChecker.notifyListeners(FileSystemChecker.java:245)
+	at org.eclipse.virgo.util.io.FileSystemChecker.check(FileSystemChecker.java:166)
+	at com.sap.core.js.deployer.watchservice.WatchTask.run(WatchTask.java:29)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/KlimaSAP]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:904)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.startWebApplication(TomcatServletContainer.java:125)
+	... 23 more|
+2014 01 25 19:32:49#+0100#ERROR#org.apache.catalina.core.ContainerBase##anonymous#Thread-7###ContainerBase.addChild: start: 
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/KlimaSAP]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.startWebApplication(TomcatServletContainer.java:125)
+	at org.eclipse.gemini.web.internal.StandardWebApplication.start(StandardWebApplication.java:109)
+	at org.eclipse.gemini.web.extender.WebContainerBundleCustomizer.addingBundle(WebContainerBundleCustomizer.java:49)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:482)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:262)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:234)
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:457)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:847)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEventPrivileged(Framework.java:1523)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEvent(Framework.java:1459)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEvent(Framework.java:1454)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:391)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:299)
+	at org.eclipse.osgi.framework.internal.core.PackageAdminImpl.resumeBundles(PackageAdminImpl.java:313)
+	at org.eclipse.osgi.framework.internal.core.PackageAdminImpl.processDelta(PackageAdminImpl.java:557)
+	at org.eclipse.osgi.framework.internal.core.PackageAdminImpl.doResolveBundles(PackageAdminImpl.java:253)
+	at org.eclipse.osgi.framework.internal.core.PackageAdminImpl.refreshPackages(PackageAdminImpl.java:167)
+	at com.sap.core.js.deployer.watchservice.WARDeployer.update(WARDeployer.java:299)
+	at com.sap.core.js.deployer.watchservice.FileSystemEventsListener.onChange(FileSystemEventsListener.java:68)
+	at org.eclipse.virgo.util.io.FileSystemChecker.notifyListeners(FileSystemChecker.java:245)
+	at org.eclipse.virgo.util.io.FileSystemChecker.check(FileSystemChecker.java:166)
+	at com.sap.core.js.deployer.watchservice.WatchTask.run(WatchTask.java:29)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoClassDefFoundError: IOException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Unknown Source)
+	at java.lang.Class.getDeclaredMethods(Unknown Source)
+	at org.apache.catalina.util.Introspection.getDeclaredMethods(Introspection.java:127)
+	at org.apache.catalina.startup.WebAnnotationSet.loadMethodsAnnotation(WebAnnotationSet.java:279)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationServletAnnotations(WebAnnotationSet.java:141)
+	at org.apache.catalina.startup.WebAnnotationSet.loadApplicationAnnotations(WebAnnotationSet.java:67)
+	at org.apache.catalina.startup.ContextConfig.applicationAnnotationsConfig(ContextConfig.java:405)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:881)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:369)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5269)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 29 more
+Caused by: java.lang.ClassNotFoundException: IOException
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:513)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 43 more|
+2014 01 25 19:32:49#+0100#ERROR#org.eclipse.gemini.web.internal.StandardWebApplication##anonymous#Thread-7###Failed to start web application at context path '/KlimaSAP'
+org.eclipse.gemini.web.core.spi.ServletContainerException: Web application at '/KlimaSAP' cannot be added to the host.
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.startWebApplication(TomcatServletContainer.java:128)
+	at org.eclipse.gemini.web.internal.StandardWebApplication.start(StandardWebApplication.java:109)
+	at org.eclipse.gemini.web.extender.WebContainerBundleCustomizer.addingBundle(WebContainerBundleCustomizer.java:49)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:482)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:262)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:234)
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:457)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:847)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEventPrivileged(Framework.java:1523)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEvent(Framework.java:1459)
+	at org.eclipse.osgi.framework.internal.core.Framework.publishBundleEvent(Framework.java:1454)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:391)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:299)
+	at org.eclipse.osgi.framework.internal.core.PackageAdminImpl.resumeBundles(PackageAdminImpl.java:313)
+	at org.eclipse.osgi.framework.internal.core.PackageAdminImpl.processDelta(PackageAdminImpl.java:557)
+	at org.eclipse.osgi.framework.internal.core.PackageAdminImpl.doResolveBundles(PackageAdminImpl.java:253)
+	at org.eclipse.osgi.framework.internal.core.PackageAdminImpl.refreshPackages(PackageAdminImpl.java:167)
+	at com.sap.core.js.deployer.watchservice.WARDeployer.update(WARDeployer.java:299)
+	at com.sap.core.js.deployer.watchservice.FileSystemEventsListener.onChange(FileSystemEventsListener.java:68)
+	at org.eclipse.virgo.util.io.FileSystemChecker.notifyListeners(FileSystemChecker.java:245)
+	at org.eclipse.virgo.util.io.FileSystemChecker.check(FileSystemChecker.java:166)
+	at com.sap.core.js.deployer.watchservice.WatchTask.run(WatchTask.java:29)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/KlimaSAP]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:904)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.eclipse.gemini.web.tomcat.internal.TomcatServletContainer.startWebApplication(TomcatServletContainer.java:125)
+	... 25 more|
+2014 01 25 19:32:49#+0100#INFO#System.out##anonymous#Thread-7###Update of file with path [C:\Users\Marcel\workspace\Servers\SAP HANA Cloud local runtime-config\.\pickup\KlimaSAP.war] is successful.|
+2014 01 25 19:37:02#+0100#INFO#System.out##anonymous#Thread-7###Updating file with path [C:\Users\Marcel\workspace\Servers\SAP HANA Cloud local runtime-config\.\pickup\KlimaSAP.war]|
+2014 01 25 19:37:05#+0100#INFO#System.out##anonymous#Thread-7###Update of file with path [C:\Users\Marcel\workspace\Servers\SAP HANA Cloud local runtime-config\.\pickup\KlimaSAP.war] is successful.|
