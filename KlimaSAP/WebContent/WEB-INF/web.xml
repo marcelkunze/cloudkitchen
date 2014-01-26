@@ -2,30 +2,30 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>KlimaSAP</display-name>
   <servlet>
-		<servlet-name>Gegenwart</servlet-name>
-		<servlet-class>klima.GegenwartServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>Komet</servlet-name>
-		<servlet-class>klima.KometServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>Treibhaus</servlet-name>
-		<servlet-class>klima.TreibhausServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>Gegenwart</servlet-name>
-		<url-pattern>/gegenwart</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>Komet</servlet-name>
-		<url-pattern>/komet</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>Treibhaus</servlet-name>
-		<url-pattern>/treibhaus</url-pattern>
-	</servlet-mapping>
-	<welcome-file-list>
-		<welcome-file>KlimaSimulationApp.html</welcome-file>
-	</welcome-file-list>
+    <servlet-name>Gegenwart</servlet-name>
+    <servlet-class>klima.GegenwartServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Komet</servlet-name>
+    <servlet-class>klima.KometServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Treibhaus</servlet-name>
+    <servlet-class>klima.TreibhausServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Gegenwart</servlet-name>
+    <url-pattern>/gegenwart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Komet</servlet-name>
+    <url-pattern>/komet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Treibhaus</servlet-name>
+    <url-pattern>/treibhaus</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>KlimaSimulationApp.html</welcome-file>
+  </welcome-file-list>
 </web-app>
