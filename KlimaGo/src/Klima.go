@@ -61,7 +61,7 @@ func iteration(tb, ta, r1, r2, r3, t1, t2 float64) (float64, float64) {
 
 // Energiebilanz der Atmosphaere
 func f(tb, ta, r1, r2, r3, t1, t2 float64) float64 {
-	return -(1.-r1-t1+r2*t1)*S/4.-c*(tb-ta)-Sigma*math.Pow(tb,4.)*(1.-t2-r3)+2.*Sigma*math.Pow(ta,4.)
+	return -(1.-r1-t1+r2*t1)*S/4.-c*(tb-ta)-Sigma*math.Pow(tb,4.)*(1.-t2-r3)+2.*Sigma*math.Pow(ta,4.);
 }
 
 // Energiebilanz des Bodens
@@ -71,20 +71,20 @@ func g(tb, ta, r2, r3, t1 float64) float64 {
 
 // part.Ableitung nach df/dTb
 func df1(tb, r3, t2 float64) float64 {
-	return -c-4.*Sigma*math.Pow(tb,3.)*(1.-t2-r3)
+	return -c-4.*Sigma*math.Pow(tb,3.)*(1.-t2-r3);
 }
 
 // part.Ableitung nach df/dTa
 func df2(ta float64) float64 {
-	return +c+8.*Sigma*math.Pow(ta,3.)
+	return +c+8.*Sigma*math.Pow(ta,3.);
 }
 
 // part.Ableitung nach dg/dTb
 func dg1(tb, r3 float64) float64 {
-	return +c+4.*Sigma*math.Pow(tb,3.)*(1.-r3)
+	return +c+4.*Sigma*math.Pow(tb,3.)*(1.-r3);
 }
 
 // part.Ableitung nach dg/dTa
 func dg2(ta float64) float64 {
-	  return -c-4.*Sigma*math.Pow(ta,3.)
+	  return -c-4.*Sigma*math.Pow(ta,3.);
 }
