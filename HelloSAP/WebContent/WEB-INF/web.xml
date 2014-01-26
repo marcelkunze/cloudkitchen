@@ -11,12 +11,12 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>HelloWorldServlet</display-name>
-    <servlet-name>HelloWorldServlet</servlet-name>
-    <servlet-class>hello.HelloWorldServlet</servlet-class>
+    <display-name>HelloSAPServlet</display-name>
+    <servlet-name>HelloSAPServlet</servlet-name>
+    <servlet-class>hello.HelloSAPServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>HelloWorldServlet</servlet-name>
+    <servlet-name>HelloSAPServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 </web-app>
